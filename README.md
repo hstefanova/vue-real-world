@@ -1,4 +1,10 @@
 # vue-real-world
 
-Start project
-  nvm use 8.10.0
+## Project setup
+```
+nvm use 8.10.0
+npm run serve
+nvm use 10.8.0
+json-server --watch db.json
+```
+
