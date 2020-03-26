@@ -7,21 +7,33 @@
     <ul>
       <li v-for="category in categories" :key="category">{{ category }}</li>
     </ul>
+
+    <p>Test getEventById getter: {{ getEventById(2) }}</p>
+
+    <!-- dynamic mutation -->
+    <input type="number" v-model.number="incrementStep" />
+    <button @click="incrementCounter">Increment Counter</button>
+    <p>{{ counter }}</p>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 export default {
+  data() {
+    return {
+      incrementStep: 10
+    }
+  },
+  methods: {
+    incrementCounter() {
+      this.$store.commit('INCREMENT_COUNTER', this.incrementStep)
+    }
+  },
   //access state properties
   computed: {
-    catLengh() {
-      return this.$store.getters.catLength
-    },
-    activeTodos() {
-      return this.$store.getters.activeTodos
-    },
-    ...mapState(['user', 'categories'])
+    ...mapGetters(['catLength', 'activeTodos', 'getEventById']),
+    ...mapState(['user', 'categories', 'counter'])
   }
 }
 </script>
