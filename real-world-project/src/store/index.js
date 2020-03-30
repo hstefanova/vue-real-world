@@ -29,7 +29,13 @@ export default new Vuex.Store({
       state.counter += value
     }
   },
-  actions: {},
+  actions: {
+    updateCount({ state, commit }, value) {
+      if (state.user) {
+        commit('INCREMENT_COUNTER', value)
+      }
+    }
+  },
   modules: {},
   getters: {
     catLength: state => {

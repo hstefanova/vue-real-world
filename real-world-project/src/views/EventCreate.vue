@@ -27,7 +27,8 @@ export default {
   },
   methods: {
     incrementCounter() {
-      this.$store.commit('INCREMENT_COUNTER', this.incrementStep)
+      // this.$store.commit('INCREMENT_COUNTER', this.incrementStep)
+      this.$store.dispatch('updateCount', this.incrementStep)
     }
   },
   //access state properties
