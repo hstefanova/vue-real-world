@@ -71,6 +71,86 @@
           "name": "Mary Gordon"
         }
       ]
+    },
+    {
+      "id": 5852100,
+      "category": "wellness",
+      "title": "Wellness Event",
+      "description": "lorem ipsum dolor sit amet",
+      "location": "NY",
+      "date": "2020-04-12T13:11:00.000Z",
+      "time": "16:00",
+      "attendees": []
+    },
+    {
+      "id": 7147800,
+      "category": "wellness",
+      "title": "Wellness part 2",
+      "description": "Lorem ipsum",
+      "location": "The fitness",
+      "date": "2020-04-15T13:20:00.000Z",
+      "time": "10:00",
+      "attendees": []
+    },
+    {
+      "id": 5820322,
+      "category": "nature",
+      "title": "Nature Title",
+      "description": "",
+      "location": "",
+      "date": "2020-04-10T13:21:00.000Z",
+      "time": "15:00",
+      "attendees": []
+    },
+    {
+      "id": 6420872,
+      "category": "nature",
+      "title": "Morning stretching",
+      "description": "",
+      "location": "NY",
+      "date": "2020-04-10T13:25:00.000Z",
+      "time": "15:00",
+      "attendees": []
+    },
+    {
+      "id": 9234794,
+      "category": "wellness",
+      "title": "Wellness Fitness 2",
+      "description": "",
+      "location": "NY",
+      "date": "2020-04-04T13:28:00.000Z",
+      "time": "18:00",
+      "attendees": []
+    },
+    {
+      "id": 9336287,
+      "user": null,
+      "category": "nature",
+      "organizer": null,
+      "title": "Test",
+      "description": "Test description",
+      "location": "NY",
+      "date": "2020-04-08T13:31:00.000Z",
+      "time": "12:00",
+      "attendees": []
+    },
+    {
+      "id": 1896074,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "animal welfare",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Animal saving",
+      "description": "",
+      "location": "Varna",
+      "date": "2020-04-11T13:32:00.000Z",
+      "time": "17:00",
+      "attendees": []
     }
   ]
 }
