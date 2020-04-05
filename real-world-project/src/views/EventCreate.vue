@@ -75,6 +75,7 @@ export default {
             name: 'event-show',
             params: { id: this.event.id }
           })
+          // reset the props
           this.event = this.createFreshEventObject()
         })
         .catch(() => {

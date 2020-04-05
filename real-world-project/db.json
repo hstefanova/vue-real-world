@@ -151,6 +151,24 @@
       "date": "2020-04-11T13:32:00.000Z",
       "time": "17:00",
       "attendees": []
+    },
+    {
+      "id": 1302411,
+      "user": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "category": "education",
+      "organizer": {
+        "id": "abc123",
+        "name": "Adam Jahr"
+      },
+      "title": "Education",
+      "description": "A school of art presents.. ",
+      "location": "Brooklyn",
+      "date": "2020-04-14T09:59:00.000Z",
+      "time": "13:00",
+      "attendees": []
     }
   ]
 }
