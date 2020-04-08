@@ -1,26 +1,19 @@
 <template>
   <div>
-    <div>This is Event List View</div>
+    <div>All events for {{ user.user.name }}</div>
     <p>Events Total: {{ eventsTotal }}</p>
     <h4>Events:</h4>
-    <EventCard v-for="event in events" :key="event.id" :event="event" />
+    <EventCard v-for="event in event.events" :key="event.id" :event="event" />
 
     <template v-if="page != 1">
-      <router-link
-        :to="{ name: 'event-list', query: { page: page - 1 } }"
-        rel="prev"
-      >
-        Prev Page</router-link
-      >
+      <router-link :to="{ name: 'event-list', query: { page: page - 1 } }" rel="prev">Prev Page</router-link>
     </template>
 
     <router-link
       v-if="hasNextPage"
       :to="{ name: 'event-list', query: { page: page + 1 } }"
       rel="prev"
-    >
-      Next Page</router-link
-    >
+    >Next Page</router-link>
   </div>
 </template>
 
@@ -47,9 +40,9 @@ export default {
     },
     hasNextPage() {
       // on current page * visible items
-      return this.eventsTotal > this.page * this.perPage
+      return this.event.eventsTotal > this.page * this.perPage
     },
-    ...mapState(['events', 'eventsTotal'])
+    ...mapState(['event', 'user'])
   }
 }
 </script>
